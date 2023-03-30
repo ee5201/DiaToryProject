@@ -1,5 +1,8 @@
 import LayOutt from "../src/component/commons/Layout";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Global } from "@emotion/react";
+import { globalStyles } from "../styles/globas";
+
 
 
 
@@ -7,7 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App({ Component, pageProps }) {
 
   return (
-    <LayOutt>
-    <Component {...pageProps} />
-    </LayOutt>)
+    <>
+    <Global styles={globalStyles
+    }/>
+<LayOutt>
+<Component {...pageProps} />
+</LayOutt>
+</>
+  )
+   
+
 }

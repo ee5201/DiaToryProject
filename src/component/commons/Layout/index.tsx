@@ -3,6 +3,7 @@ import Banner from "./Banner/Banner.container";
 import HeaderContainer from "./Header/Header.container";
 import NavgationContainer from "./Navigation/Navigation.container";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MainContainer from "./Main/Main.container";
 
 
 interface ILaoutTT {
@@ -14,6 +15,7 @@ export default function LayOutt(props:ILaoutTT) {
     <HeaderContainer/>
     <NavgationContainer/>
     <BannerContainer/>
+    <MainContainer/>
     <div>{props.children}</div>
     </>
   )
